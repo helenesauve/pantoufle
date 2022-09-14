@@ -1,0 +1,21 @@
+{% load static %}
+<html>
+    <head>
+        <title>Helene Codes</title>
+        <link rel="stylesheet" href="{% static 'css/base.css' %}">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+    </head>
+<body>
+<div class="header">
+    <header>
+        <h1><a style="text-decoration: none" href="{% url 'home' %}">Helene Codes</a></h1>
+    </header>
+</div>
+    <div>
+        {% block content %} 
+        {% endblock content %}
+    </div>
+</body>
+</html>

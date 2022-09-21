@@ -1,9 +1,40 @@
-.header {
-    padding: 30px;
-    text-align: center;
-    background: #FFAA33;
+.blog {
+  max-width: 38em;
+  margin: auto;
+}
+
+.topnav {
+    padding: 40px;
+    background: #ACE1AF;
+    color: #f2f2f2;
     text-decoration: none;
-    color: white;
-    font-size: 30px;
     font-family: 'Inconsolata', monospace;
   }
+/* Style the links inside the navigation bar */
+.topnav .menu a {
+    float: right;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  /* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav .title a {
+  float: left;
+  text-align: center;
+  font-size: 34px;
+  color: white;
+}
+
+.topnav .menu a {
+  float: right;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+}

@@ -1,5 +1,10 @@
 from django.db import models
+<<<<<<< HEAD
 from django.urls import reverse
+=======
+from django.urls import reverse 
+from ckeditor_uploader.fields import RichTextUploadingField
+>>>>>>> ckeditor
 
 # Create your models here.
 
@@ -10,7 +15,7 @@ class Post(models.Model):
         'auth.User', 
         on_delete=models.CASCADE,
     )
-    body = models.TextField(
+    body = RichTextUploadingField(blank=True, null=True,
         default='SOME STRING'
     )
 

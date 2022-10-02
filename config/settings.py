@@ -38,6 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blog',
+    'ckeditor',
+    'ckeditor_uploader'
 ]
 
 MIDDLEWARE = [
@@ -120,3 +122,19 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [str(BASE_DIR.joinpath('static'))]
+STATIC_ROOT = BASE_DIR / "staticfiles"
+
+CKEDITOR_UPLOAD_PATH = 'uploads/'
+MEDIA_URL = "media/"
+MEDIA_ROOT = BASE_DIR / "mediafiles"
+
+DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+CKEDITOR_CONFIGS = {
+    'default':
+        {'toolbar': 'Custom', 
+         'toolbar_Custom': [
+            ['Bold', 'Link', 'Unlink', 'Image'],
+            ['CodeSnippet'], 
+        ], 'extraPlugins': 'codesnippet',
+}}

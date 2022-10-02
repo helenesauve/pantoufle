@@ -1,10 +1,6 @@
 from django.urls import path
-<<<<<<< HEAD
-from .views import BlogListView, BlogDetailView
-=======
 from .views import AboutPageView, BlogListView, BlogDetailView
 
->>>>>>> ckeditor
 
 urlpatterns = [
     path('post/<slug:slug>/', BlogDetailView.as_view(), 

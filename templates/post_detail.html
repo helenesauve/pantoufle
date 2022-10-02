@@ -1,15 +1,9 @@
 {% extends 'base.html' %} 
 
 {% block content %} 
-<<<<<<< HEAD
-    <div class="post-entry">
-        <h2>{{ post.title }}</h2>
-        <p>{{ post.body }}</p>
-=======
     <div class="text-start">
         <h1 class="display-5">{{ post.title }}</h1>
         <p>{{ post.body | safe }}</p>
->>>>>>> ckeditor
     </div>
 
     {% endblock content %} 

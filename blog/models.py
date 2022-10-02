@@ -1,10 +1,6 @@
 from django.db import models
-<<<<<<< HEAD
 from django.urls import reverse
-=======
-from django.urls import reverse 
 from ckeditor_uploader.fields import RichTextUploadingField
->>>>>>> ckeditor
 
 # Create your models here.
 

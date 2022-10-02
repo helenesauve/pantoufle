@@ -1,12 +1,5 @@
 {% extends 'base.html' %}
 
-<<<<<<< HEAD
-{% block content %} 
-    {% for post in object_list %} 
-        <div class="post-entry">
-            <h2><a href="{{ post.get_absolute_url }}">{{ post.title }}</a></h2>
-            <p>{{ post.body|truncatewords:50 }}</p>
-=======
 {% block content %}
 <div class="container">
     <div class="row">
@@ -14,7 +7,6 @@
         <div class="post-entry col">
             <h2 class="h3"><a href="{{ post.get_absolute_url }}">{{ post.title }}</a></h2>
             <p class="content">{{ post.body|truncatewords:35|safe }}</p>
->>>>>>> ckeditor
         </div>
         {% endfor %}
     </div>

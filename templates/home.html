@@ -4,11 +4,28 @@
 <div class="container">
     <div class="row">
         {% for post in object_list %}
-        <div class="post-entry col">
-            <h2 class="h3"><a href="{{ post.get_absolute_url }}">{{ post.title }}</a></h2>
+        {% if forloop.first %}
+        <div class="firstpost">
+            <div class="post-entry">
+                <h2 class="h3"><a href="{{ post.get_absolute_url }}">{{ post.title }}</a></h2>
+                <p class="content">{{ post.body|truncatewords:35|safe }}</p>
+            </div>
+        </div>
+        {% endif %}
+        <div class="post-entry row">
+            {% if forloop.first %}
+
+            {% elif forloop.counter0|divisibleby:2 %}
+            <h2 class="h3 col"><a href="{{ post.get_absolute_url }}">{{ post.title }}</a></h2>
             <p class="content">{{ post.body|truncatewords:35|safe }}</p>
         </div>
-        {% endfor %}
+        {% if not forloop.last %}
+        <div class="post-entry col">
+            {% endif %}
+            {% endif %}
+            {% if forloop.last %}
+        </div>
+        {% endif %}
     </div>
-</div>
-{% endblock content %}
+    {% endfor %}
+    {% endblock content %}

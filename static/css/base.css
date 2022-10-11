@@ -5,8 +5,8 @@
 
 .topnav {
     padding: 40px;
-    background: #ACE1AF;
-    color: #f2f2f2;
+    background:#F0F8FF;
+    color: white;
     text-decoration: none;
     font-family: 'Inconsolata', monospace;
   }
@@ -19,3 +19,11 @@
   color: black;
 }
 
+.firstpost {
+  text-align:left;
+}
+
+.pitlochry {
+  width:200px;
+  height:200px;
+}

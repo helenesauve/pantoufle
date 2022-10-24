@@ -1,10 +1,5 @@
-.blog {
-  max-width: 38em;
-  margin: auto;
-}
 
-.topnav {
-    padding: 100px;
+.navbar {
     background:#F0F8FF;
     color: white;
     text-decoration: none;
@@ -13,8 +8,14 @@
 /* Style the links inside the navigation bar */
 
 
+.navbar-brand {
+  padding: 20px;
+  font-size: 1.2em;
+}
+
+
   /* Change the color of links on hover */
-.topnav a:hover {
+.navbar a:hover {
   background-color: #ddd;
   color: black;
 }
@@ -23,7 +24,31 @@
   text-align:left;
 }
 
-.pitlochry {
-  width:200px;
-  height:200px;
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+.body {
+  margin-bottom: 60px;
+  margin: auto;
+  max-width: 38em; /* Margin bottom by footer height */
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  height: 60px; /* Set the fixed height of the footer here */
+  line-height: 60px; /* Vertically center the text there */
+  background-color: #f5f5f5;
+}
+
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+.container {
+  width: auto;
+  padding: 0 15px;
 }

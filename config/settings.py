@@ -41,7 +41,6 @@ INSTALLED_APPS = [
     'ckeditor',
     'ckeditor_uploader',
     'django_browser_reload',
-    'photo.apps.PhotoConfig',
 ]
 
 MIDDLEWARE = [

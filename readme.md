@@ -2,7 +2,7 @@
 
 ## Description
 
-This blog is built using the Python-based web framework Django, following the teaching of William Vincent in his book [Django for Beginners](https://github.com/helenesauve/pantoufle).
+This blog is built using the Python-based web framework Django, following the teaching of William Vincent in his book [Django for Beginners](https://djangoforbeginners.com/).
 
 ## Title
 

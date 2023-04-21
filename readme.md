@@ -4,6 +4,10 @@
 
 This blog is built using the Python-based web framework Django, following the teaching of William Vincent in his book [Django for Beginners](https://github.com/helenesauve/pantoufle).
 
+## Title
+
+The name 'Pantoufle' means 'sleeper' in French. I picked the name as I love the sound of it and because it has a connotation of comfort and coziness.
+
 ## Blog structure 
 
 The blog is in its early stages but already contains its main elements: 
